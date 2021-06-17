@@ -1,6 +1,6 @@
 package Strategy;
 
-public class Cat implements Comparable<Cat>
+public class Cat
 {
     int weight;
 
@@ -22,9 +22,4 @@ public class Cat implements Comparable<Cat>
                 '}';
     }
 
-    @Override
-    public int compareTo(Cat o) {
-        Cat tmp = o;
-        return this.weight != tmp.weight ? this.weight-tmp.weight : this.height-tmp.height;
-    }
 }

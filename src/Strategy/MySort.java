@@ -10,7 +10,7 @@ public class MySort
         arrays[1] = new Cat(15,10);
         arrays[2] = new Cat(15,8);
 
-        Arrays.sort(arrays);
+        Arrays.sort(arrays,MyCatWeightDecreaseComparator.getInstance());
         for(Cat cat : arrays)
         {
             System.out.println(cat);
