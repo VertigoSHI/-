@@ -3,11 +3,8 @@ package AbstractFactory;
 public class Main
 {
     public static void main(String[] args) {
-        Car c = new Car();
+        AbstractFactory f = new ModernFactory();
+        Movable c = f.createMovable();
         c.go();
-        Gun g = new Gun();
-        g.shoot();
-        Bread b = new Bread();
-        b.printName();
     }
 }
