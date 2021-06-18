@@ -9,7 +9,7 @@ public abstract class MyCatComparator implements Comparator
 
 class MyCatWeightIncreaseComparator extends MyCatComparator
 {
-    @Override
+
     public int compare(Object o1, Object o2) {
         Cat a = (Cat)o1;
         Cat b = (Cat)o2;
@@ -39,7 +39,7 @@ class MyCatWeightDecreaseComparator extends MyCatComparator
         return InstanceHolder.instance;
     }
 
-    @Override
+
     public int compare(Object o1, Object o2) {
         Cat a = (Cat)o1;
         Cat b = (Cat)o2;
